@@ -14,7 +14,7 @@ public class TestPartA
   public void test_isOdd() 
     throws Exception
   {
-    assertEquals("negative even", false, PartA.isOdd(-4));
+    assertEquals("negative even", false, PartA.isOdd(-10));
     // Integer.MAX_VALUE is 2^31 - 1, which is odd
     assertEquals("MAX_VALUE", true, PartA.isOdd(Integer.MAX_VALUE));
   } // test_isOdd
