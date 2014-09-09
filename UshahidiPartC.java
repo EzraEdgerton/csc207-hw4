@@ -1,4 +1,4 @@
-package com.homework.tao.hw2;
+package cs207.hw2;
 
 public class UshahidiPartC {
 //write methods for getting information about Ray Kington sightings
