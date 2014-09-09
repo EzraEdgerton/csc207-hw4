@@ -1,3 +1,4 @@
+package com.homework.tao.hw2;
 public class PartA {
 	/**
 	 * Determine if a is a multiple of b.

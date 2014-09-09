@@ -1,25 +1,48 @@
+package com.homework.tao.hw2;
 
 public class PartD {
 
 	
-	public static rhyme[] nameGame()
+	public static String nameGame()
 	{ //ask Sam how to generalize input
 		String name = new String("Shirley");
-		String end = new String;
-		if (name[1] != "a" && name[1] != "e" && name[1] != "i" && name[1] != "o" && name[1] != "u")
+		String end = new String();
+		String secondLetter = name.substring(1,2);
+	    java.io.PrintWriter pen;
+	    java.lang.String nameGame;
+	    pen = new java.io.PrintWriter(System.out, true);
+		if (!secondLetter.equals("a") && !secondLetter.equals("e") && !secondLetter.equals("i") && !secondLetter.equals("o") && !secondLetter.equals("u"))
 		{
-			for (int i = 0; i < array.length(name); i++)
-				end[i] = name[i+2];
+			end = name.substring(2);
 		}
-		else
-			for (int i = 0; i < array.length(name); i++)
-				end[i] = name[i+1];
-		String end = new String("irley")
-		System.out.println(name + "!");
-		System.out.println(name + ", " + name + " bo B" + end + " Banana fanna fo F" + end);
-		System.out.println("Fee fy mo M" + end + ", " + name);
+		else 
+		{
+			end = name.substring(1);
+		}
 		
+	    // Create objects and associate the names with those objects.
+		pen.println(secondLetter);
+		pen.println(end);
+	    nameGame = (name + "!\n" + name + ", " + name + " bo B" + end + 
+				" Banana fanna fo F" + end +  "\nFee fy mo M" + end + ", " + name);
+	    // Tell one object to do something.
+	    pen.println(nameGame);
+		
+		
+		return (name + "!\n" + name + ", " + name + " bo B" + end + 
+				" Banana fanna fo F" + end + "Fee fy mo M" + end + ", " + name);
+
 	}
+	
+	
+	public static void main(String [ ] args)
+	{
+		nameGame();
+	}
+	
+	/*
+	 * Evan Bruns (magnificent fellow) helped us by showing us the significance of the main method. 
+	 */
 }
 
 /*

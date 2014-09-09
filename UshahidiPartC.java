@@ -1,3 +1,4 @@
+package com.homework.tao.hw2;
 
 public class UshahidiPartC {
 //write methods for getting information about Ray Kington sightings
@@ -16,6 +17,12 @@ public class UshahidiPartC {
 	   Parameters:  [none]
 	   Produces:    owner, an UshahidiUser
 	   
+	   Method:      getDescription
+	   Type:        Observer
+	   Purpose:     Get the description of the reported sighting.
+	   Parameters:  [none]
+	   Produces:    description, a String
+	   
 	   Method:      getTime
 	   Type:        Observer  <--Object Defined
 	   Purpose:     Get the time of the reported sighting.
@@ -29,6 +36,7 @@ public class UshahidiPartC {
 	   Purpose:     Get the location of the reported sighting.
 	   Parameters:  [none]
 	   Produces:    owner, an UshahidiUser
+	   
 	   
 	   Method:      ifYoureCreepyEnoughGetAPhoto
 	   Type:        Observer
