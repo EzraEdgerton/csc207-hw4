@@ -1,5 +1,7 @@
 import java.io.PrintWriter;
 import java.math.BigInteger;
+import java.util.Arrays;
+
 
 public class Main {
 	
@@ -8,10 +10,13 @@ public class Main {
 	{
 	//	BigInteger num = new BigInteger("2");
 	//	BigInteger denom = new BigInteger("4");
-		Fraction test = new Fraction("17");
+	//	Fraction test = new Fraction("3/9");
 	//	Fraction test = new Fraction(num, denom);
+	//	StringUtil.splitAt("Wow",'d');
+	//	StringUtil.splitAt("a:b:c", ' ');
+		
 		PrintWriter pen = new PrintWriter (System.out, true);
-		pen.println(test.negate());
+		pen.println(Arrays.toString(StringUtil.splitAt("a,\"b,b\"\"\",c", ',')));
 		pen.close();
 	}
 	}
