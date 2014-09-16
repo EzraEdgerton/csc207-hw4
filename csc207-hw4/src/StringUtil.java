@@ -1,7 +1,3 @@
-import java.util.Arrays;
-import static java.lang.System.out;
-
-
 
 public class StringUtil {
 static public String[] splitAt(String thread, char splitter)

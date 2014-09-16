@@ -10,16 +10,16 @@ public class Main {
 	{
 	//	BigInteger num = new BigInteger("2");
 	//	BigInteger denom = new BigInteger("4");
-	//	Fraction test = new Fraction("3/9");
+	//	Fraction test = new Fraction("2/5");
 	//	Fraction test = new Fraction(num, denom);
 	//	StringUtil.splitAt("Wow",'d');
 	//	StringUtil.splitAt("a:b:c", ' ');
-		String thing = "1 + 3 * 3";
+		String thing = "1/2 + 1/4 - 2/3 ^ -4";
 		PrintWriter pen = new PrintWriter (System.out, true);
 	//	pen.println(Arrays.toString(StringUtil.splitAt("a,\"b,b\"\"\",c", ',')));
-		pen.println(Calculator.eval0(thing));
+		pen.println(Calculator.eval1(thing));
+	//	pen.println(test.pow(5));
 		pen.close();
 	}
 	}
-
 

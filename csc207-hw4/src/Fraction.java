@@ -146,17 +146,25 @@ public class Fraction {
 	/**
 	* Convert this fraction to a string for ease of printing.
 	*/
-	/*public Fraction pow(int expt)
+	public Fraction pow(int expt)
 	{
 		BigInteger resultNum;
 		BigInteger resultDenom;
 		
-		
-		resultNum = Math.pow(this.num.doubleValue(), expt);
-		resultDenom = 
+		if (expt < 0)
+		{
+		    int newExpt = expt * -1;
+		    resultNum = this.denom.pow(newExpt);
+		    resultDenom = this.num.pow(newExpt);
+		}
+		else
+		{
+		resultNum = this.num.pow(expt);
+		resultDenom = this.denom.pow(expt);
+		}
 		
 		return new Fraction(resultNum, resultDenom);
-	}*/ //TALK TO SAM 
+	} //TALK TO SAM 
 	
 	public String toString ()
 	{
