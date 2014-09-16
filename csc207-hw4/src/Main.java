@@ -14,9 +14,10 @@ public class Main {
 	//	Fraction test = new Fraction(num, denom);
 	//	StringUtil.splitAt("Wow",'d');
 	//	StringUtil.splitAt("a:b:c", ' ');
-		
+		String thing = "1 + 3 * 3";
 		PrintWriter pen = new PrintWriter (System.out, true);
-		pen.println(Arrays.toString(StringUtil.splitAt("a,\"b,b\"\"\",c", ',')));
+	//	pen.println(Arrays.toString(StringUtil.splitAt("a,\"b,b\"\"\",c", ',')));
+		pen.println(Calculator.eval0(thing));
 		pen.close();
 	}
 	}
