@@ -17,7 +17,7 @@ public class FractionTest {
 		  assertEquals("-5/2", f.negate().toString());
 
 		  f = new Fraction(4,2);
-		  assertEquals("-4/2", f.negate().toString());
+		  assertEquals("-2/1", f.negate().toString());
 	}
 	@Test
 	public void testMultiply() {
@@ -26,13 +26,13 @@ public class FractionTest {
 		  assertEquals("22/3", f.multiply(y).toString());
 
 		  f = new Fraction(1,2);
-		  assertEquals("2/2",  f.multiply(y).toString());
+		  assertEquals("1/1",  f.multiply(y).toString());
 
 		  f = new Fraction (5,2);
-		  assertEquals("10/2", f.multiply(y).toString());
+		  assertEquals("5/1", f.multiply(y).toString());
 
 		  f = new Fraction(4,2);
-		  assertEquals("8/2", f.multiply(y).toString());
+		  assertEquals("4/1", f.multiply(y).toString());
 	}
 	
 	@Test
@@ -45,10 +45,10 @@ public class FractionTest {
 		  assertEquals("0",  f.subtract(y).toString()); 
 
 		  f = new Fraction (5,2);
-		  assertEquals("8/4", f.subtract(y).toString());// 5/2-1/2
+		  assertEquals("2/1", f.subtract(y).toString());// 5/2-1/2
 
 		  f = new Fraction(4,2);
-		  assertEquals("6/4", f.subtract(y).toString());// 4/2-1/2
+		  assertEquals("3/2", f.subtract(y).toString());// 4/2-1/2
 	}
 
 	@Test
@@ -58,13 +58,13 @@ public class FractionTest {
 		  assertEquals("22/3", f.divide(y).toString());
 
 		  f = new Fraction(1,2);
-		  assertEquals("2/2",  f.divide(y).toString());
+		  assertEquals("1/1",  f.divide(y).toString());
 
 		  f = new Fraction (5,2);
-		  assertEquals("10/2", f.divide(y).toString());
+		  assertEquals("5/1", f.divide(y).toString());
 
 		  f = new Fraction(4,2);
-		  assertEquals("8/2", f.divide(y).toString());
+		  assertEquals("4/1", f.divide(y).toString());
 	}
 	
 	@Test

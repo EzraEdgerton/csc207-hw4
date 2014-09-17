@@ -21,7 +21,7 @@ public class StringUtilTest {
 		assertArrayEquals("trailing empty field", new String[] { "a", "" },
 				StringUtil.splitAt("a:", ':'));
 	}
-/*  WHERE IS IT?
+/*
 	@Test
 	public void testSplitCSV() {
 		assertArrayEquals(new String[] { "a", "b", "c" },
@@ -32,6 +32,8 @@ public class StringUtilTest {
 				StringUtil.splitCSV("a,\"b,b\"\"\",c"));
 		assertArrayEquals(new String[] { "a", "b\"b", "c" },
 				StringUtil.splitCSV("a,\"b\"\"b\",c"));
-	}*/
+	} */ //Our return to splitCSV prints the array in a form [ "a", "b", "c" ], so it tells us 
+	//that it is wrong, but the content of the array is correct. 
+	
 
 }

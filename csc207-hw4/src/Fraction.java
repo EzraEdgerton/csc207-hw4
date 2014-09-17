@@ -29,6 +29,7 @@ public class Fraction {
 		this.num = BigInteger.valueOf(num);
 		this.denom = BigInteger.valueOf(denom);
 	} // Fraction(int, int)
+	
 
 	/**
 	 * Parse the string given to a fraction
@@ -50,6 +51,9 @@ public class Fraction {
 	// | Methods |
 	// +---------+
 
+	
+	//  Credit to Alex and Justus for telling us that we cannot do 
+	//modifiers in a constructor...yet
 	public Fraction simplify() { // PART B
 		BigInteger resultNum;
 		BigInteger resultDenom;
@@ -74,7 +78,7 @@ public class Fraction {
 		BigInteger resultDenom;
 		resultNum = this.num.negate();
 		resultDenom = this.denom;
-		return new Fraction(resultNum, resultDenom);
+		return new Fraction(resultNum, resultDenom).simplify();
 	}// negate
 
 	/**
@@ -86,7 +90,7 @@ public class Fraction {
 		BigInteger resultDenominator;
 		resultDenominator = this.denom.multiply(multiplicand.denom);
 		resultNumerator = this.num.multiply(multiplicand.num);
-		return new Fraction(resultNumerator, resultDenominator);
+		return new Fraction(resultNumerator, resultDenominator).simplify();
 	}// multiply(Fraction)
 
 	/**
@@ -103,7 +107,7 @@ public class Fraction {
 		resultNumerator = (this.num.multiply(addMe.denom)).add(addMe.num
 				.multiply(this.denom));
 		// Return the computed value
-		return new Fraction(resultNumerator, resultDenominator);
+		return new Fraction(resultNumerator, resultDenominator).simplify();
 	}// add(Fraction)
 
 	/**
@@ -116,12 +120,12 @@ public class Fraction {
 				subtrahend.num.multiply(this.denom));
 		// make sure that the denominators match
 		resultDenom = this.denom.multiply(subtrahend.denom);
-		return new Fraction(resultNum, resultDenom);
+		return new Fraction(resultNum, resultDenom).simplify();
 	}// subtract(Fraction)
 
 	public Fraction divide(Fraction divisor) { // PART A
 		Fraction flipper = new Fraction(divisor.denom, divisor.num);
-		return this.multiply(flipper);
+		return this.multiply(flipper).simplify();
 	}// divide(Fraction)
 
 	/**
@@ -141,7 +145,7 @@ public class Fraction {
 			resultDenom = this.denom.pow(expt);
 		}// else
 
-		return new Fraction(resultNum, resultDenom);
+		return new Fraction(resultNum, resultDenom).simplify();
 	}// pow(int)
 
 	/**
