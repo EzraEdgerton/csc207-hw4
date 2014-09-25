@@ -1,3 +1,5 @@
+package edu.grinnell.csc207.zuckerha17.utils;
+
 import java.math.BigInteger;
 
 public class Fraction {
@@ -46,6 +48,7 @@ public class Fraction {
 		}
 	} // Fraction(String)
 		// +---------+------------------------------------------------------
+
 	// | Methods |
 	// +---------+
 	// Credit to Alex and Justus for telling us that we cannot do
